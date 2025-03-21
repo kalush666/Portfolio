@@ -4,6 +4,7 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import "./index.css";
 import { NavBar } from "./components/NavBar";
 import { MobileMenu } from "./components/MobileMenu";
+import { Home } from "./components/sections/Home";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -20,6 +21,7 @@ function App() {
       >
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Home />
       </div>
     </>
   );
