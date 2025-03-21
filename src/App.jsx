@@ -3,6 +3,7 @@ import "./App.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import "./index.css";
 import { NavBar } from "./components/NavBar";
+import { MobileMenu } from "./components/MobileMenu";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,6 +19,7 @@ function App() {
         } bg-black text-gray-100`}
       >
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
     </>
   );
